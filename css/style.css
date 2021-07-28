@@ -1469,7 +1469,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
     margin-left: -1.5px;
  }
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 	h1{
 		font-size: 45px;
 		text-align: center;
@@ -1485,16 +1485,8 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 	.bal-handle {
 		height: 25px;
 		width: 25px;
-		position: absolute;
-		left: 50%;
-		top: 50%;
 		margin-left: -21px;
 		margin-top: -50px;
-		border: 2px solid #fff;
-		border-radius: 1000px;
-		z-index: 20;
-		pointer-events: none;
-		box-shadow: 0 0 10px rgb(12, 12, 12);
 	}
 	.bal-handle::before,
     .bal-handle::after {
