@@ -6,19 +6,28 @@
 	<meta name="description" content="Boto Photo Studio HTML Template">
 	<meta name="keywords" content="photo, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preload" href="css/style.css" as="style"/>
+	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="css/slicknav.min.css"/>
 	<link rel="stylesheet" href="css/fresco.css"/>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<!-- Main Stylesheets -->
 	<link rel="stylesheet" href="css/style.css"/>
 
 
 </head>
 <body>
+	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
 	</div>
+
+	<!-- Header Section -->
 	<header class="header">
 		<div class="container-fluid">
 			<div class="row">
@@ -51,6 +60,9 @@
 			</nav>
 		</div>
 	</header>
+	<!-- Header Section end -->
+
+	<!-- About Page -->
 	<div class="gallery__page">
 		<div class="gallery__warp">
 			<div class="row">
@@ -130,6 +142,11 @@
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-6">
+					<a class="gallery__item fresco" href="img/gallery/infancia.jpeg" data-fresco-group="gallery">
+						<img src="img/gallery/infancia.jpeg" alt="" class="squared">
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
 					<a class="gallery__item fresco" href="img/gallery/girls.jpg" data-fresco-group="gallery">
 						<img src="img/gallery/girls.jpg" alt="" class="squared">
 					</a>
@@ -164,17 +181,20 @@
 						<img src="img/gallery/30 dic metting2.PNG" alt="" class="squared">
 					</a>
 				</div>
+
 				<div class="col-lg-3 col-md-4 col-sm-6">
-					<a class="gallery__item fresco" href="img/gallery/infancia.jpeg" data-fresco-group="gallery">
-						<img src="img/gallery/infancia.jpeg" alt="" class="squared">
+					<a class="gallery__item fresco" href="img/gallery/felix-niño.jpeg" data-fresco-group="gallery">
+						<img src="img/gallery/felix-niño.jpeg" alt="" class="squared">
 					</a>
 				</div>
+
 				<div class="mainSection">
-						<div class="col-xs-12 col-md-6">
-					<div id="one" class="bal-container">
+					<div class="col-xs-12 col-md-6">
+						<h1 class="be-af">metting</h1>
+							<div id="one" class="bal-container">
 						
 						<div class="bal-after">
-							<img src="img/gallery/6grade.jpg" class="beforeafter">
+							<img src="img/gallery/30 dic metting1.PNG" alt="" class="img-after">
 							<div class="bal-afterPosition afterLabel">
 								After
 							</div>
@@ -182,7 +202,7 @@
 						
 						<div class="bal-before">
 							<div class="bal-before-inset">
-								<img src="img/gallery/infancia.jpeg" class="beforeafter">
+								<img src="img/gallery/30 dic metting2.PNG" class="img-before">
 								<div class="bal-beforePosition beforeLabel">
 									Before
 								</div>
@@ -194,11 +214,16 @@
 							<span class="handle-right-arrow"></span>
 						</div>
 					</div>
-				</div>
+						</div>
 			</div>
+
 		</div>
 			</div>
 		</div>
+
+
+	<!-- About Page end -->
+	<!-- Search Begin -->
 	<div class="search-model">
 		<div class="h-100 d-flex align-items-center justify-content-center">
 			<div class="search-close-switch">+</div>
@@ -207,6 +232,9 @@
 			</form>
 		</div>
 	</div>
+	<!-- Search End -->
+
+	<!--====== Javascripts & Jquery ======-->
 	<script src="js/scripts.js"></script>
 	<script>
 		new BeforeAfter({
@@ -216,6 +244,23 @@
 			id: '#two'
 		});
 	  </script>
+	  <script>
+		AOS.init();
+	  </script>
+	  <script>
+		  $("#myCarousel").carousel();
+
+// Enable Carousel Indicators
+$(".item").click(function(){
+  $("#myCarousel").carousel(1);
+});
+
+// Enable Carousel Controls
+$(".left").click(function(){
+  $("#myCarousel").carousel("prev");
+});
+	  </script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="js/vendor/jquery-3.2.1.min.js"></script>
 	<script src="js/jquery.slicknav.min.js"></script>
 	<script src="js/slick.min.js"></script>
